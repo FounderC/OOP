@@ -1,0 +1,7 @@
+C:\Users\Khome\Desktop\Проект Unity\My Project\Лаб2\Лаб2\obj\Debug\Лаб2.csproj.AssemblyReference.cache
+C:\Users\Khome\Desktop\Проект Unity\My Project\Лаб2\Лаб2\obj\Debug\Лаб2.csproj.CoreCompileInputs.cache
+C:\Users\Khome\Desktop\Проект Unity\My Project\Лаб2\Лаб2\bin\Debug\Лаб2.exe.config
+C:\Users\Khome\Desktop\Проект Unity\My Project\Лаб2\Лаб2\bin\Debug\Лаб2.exe
+C:\Users\Khome\Desktop\Проект Unity\My Project\Лаб2\Лаб2\bin\Debug\Лаб2.pdb
+C:\Users\Khome\Desktop\Проект Unity\My Project\Лаб2\Лаб2\obj\Debug\Лаб2.exe
+C:\Users\Khome\Desktop\Проект Unity\My Project\Лаб2\Лаб2\obj\Debug\Лаб2.pdb
