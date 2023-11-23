@@ -2,19 +2,19 @@
 {
     class GameFactory
     {
-        public GameAccount CreateStandardGame(string UserName, int InitialRating)
+        public GameAccount CreateStandardGameAccount(string userName, int initialRating)
         {
-            return new StandardGame(UserName, InitialRating);
+            return new StandardGameAccount(userName, initialRating);
         }
 
-        public GameAccount CreateReducedLossGame(string UserName, int InitialRating)
+        public GameAccount CreateReducedLossGameAccount(string userName, int initialRating)
         {
-            return new ReducedLossGame(UserName, InitialRating);
+            return new ReducedLossGameAccount(userName, initialRating);
         }
 
-        public GameAccount CreateWinningStreakGame(string UserName, int InitialRating)
+        public GameAccount CreateWinningStreakGameAccount(string userName, int initialRating)
         {
-            return new WinningStreakGame(UserName, InitialRating);
+            return new WinningStreakGameAccount(userName, initialRating);
         }
     }
 }

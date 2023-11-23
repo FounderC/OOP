@@ -4,13 +4,13 @@
     {
         public string OpponentName { get; }
         public bool Victory { get; }
-        public int ChangeRating { get; }
+        public int RatingChange { get; }
 
-        public Result(string opponentName, bool victory, int changeRating)
+        public Result(string opponentName, bool victory, int ratingChange)
         {
             OpponentName = opponentName;
             Victory = victory;
-            ChangeRating = changeRating;
+            RatingChange = ratingChange;
         }
     }
 }

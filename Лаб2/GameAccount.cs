@@ -3,58 +3,62 @@ using System.Collections.Generic;
 
 namespace Лаб2
 {
-    abstract class GameAccount : Simulation
+    abstract class GameAccount
     {
         protected string UserName;
         protected int CurrentRating;
         protected int GamesCount;
-        protected List<Result> history;
+        protected List<Result> History;
 
-        public GameAccount(string UserName, int InitialRating)
+        public GameAccount(string userName, int initialRating)
         {
-            SetUserName(UserName);
-            if (InitialRating < 1)
+            SetUserName(userName);
+            if (initialRating < 1)
             {
-                throw new ArgumentException("Рейтинг повинен бути більшим або дорівнює 1 ");
+                throw new ArgumentException("Рейтинг повинен бути більшим або дорівнювати 1.");
             }
-            CurrentRating = InitialRating;
+
+            CurrentRating = initialRating;
             GamesCount = 0;
-            history = new List<Result>();
+            History = new List<Result>();
         }
 
-        public abstract int RatingCalculatorWin(int GameRating);
-        public abstract int RatingCalculatorLoss(int GameRating);
+        public abstract int CalculateRatingForWin(int gameRating);
 
-        public void WinGame(GameAccount opponent, int GameRating)
+        public abstract int CalculateRatingForLoss(int gameRating);
+
+        public void WinGame(GameAccount opponent, int gameRating)
         {
-            int ChangeRating = RatingCalculatorWin(GameRating);
-            CurrentRating += ChangeRating;
+            int ratingChange = CalculateRatingForWin(gameRating);
+            CurrentRating += ratingChange;
             GamesCount++;
-            history.Add(new Result(opponent.GetUserName(), true, ChangeRating));
+            History.Add(new Result(opponent.GetUserName(), true, ratingChange));
         }
 
-        public void LoseGame(GameAccount opponent, int GameRating)
+        public void LoseGame(GameAccount opponent, int gameRating)
         {
-            int ChangeRating = RatingCalculatorLoss(GameRating);
-            CurrentRating -= ChangeRating;
+            int ratingChange = CalculateRatingForLoss(gameRating);
+            CurrentRating -= ratingChange;
             if (CurrentRating < 1)
             {
                 CurrentRating = 1;
             }
 
             GamesCount++;
-            history.Add(new Result(opponent.GetUserName(), false, ChangeRating));
+            History.Add(new Result(opponent.GetUserName(), false, ratingChange));
         }
 
         public void GetStats()
         {
-            Console.WriteLine($"Статистика {UserName}:");
-            for (int i = 0; i < history.Count; i++)
+            Console.WriteLine($"Статистика {UserName} ({GetAccountType()}):");
+            for (int i = 0; i < History.Count; i++)
             {
-                var result = history[i];
+                var result = History[i];
                 string output = result.Victory ? "перемога" : "поразка";
-                Console.WriteLine($"Гра #{i + 1}: Проти {result.OpponentName}, Результат: {output}, Зміна рейтингу: {result.ChangeRating}");
+                Console.WriteLine(
+                    $"Гра #{i + 1}: Проти {result.OpponentName}, Результат: {output}, Зміна рейтингу: {result.RatingChange}");
             }
+
             Console.WriteLine($"Загальна кількість ігор: {GamesCount}, Поточний рейтинг: {CurrentRating}");
         }
 
@@ -62,6 +66,8 @@ namespace Лаб2
         {
             return UserName;
         }
+
+        public abstract string GetAccountType();
 
         private void SetUserName(string value)
         {

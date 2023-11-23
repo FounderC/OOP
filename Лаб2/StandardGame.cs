@@ -1,17 +1,17 @@
 ﻿namespace Лаб2
 {
-    class StandardGame : GameAccount
+    class StandardGame : Game
     {
-        public StandardGame(string UserName, int InitialRating) : base(UserName, InitialRating) { }
+        private int gameRating;
 
-        public override int RatingCalculatorWin(int GameRating)
+        public StandardGame(int rating)
         {
-            return GameRating;
+            gameRating = rating;
         }
 
-        public override int RatingCalculatorLoss(int GameRating)
+        public override int GetGameRating()
         {
-            return GameRating;
+            return gameRating;
         }
     }
 }

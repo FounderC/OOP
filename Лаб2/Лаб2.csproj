@@ -43,14 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Game.cs" />
     <Compile Include="GameAccount.cs" />
     <Compile Include="GameFactory.cs" />
-    <Compile Include="Simulation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReducedLossGame.cs" />
+    <Compile Include="ReducedLossGameAccount.cs" />
     <Compile Include="Result.cs" />
+    <Compile Include="Simulation.cs" />
+    <Compile Include="SoloGame.cs" />
     <Compile Include="StandardGame.cs" />
-    <Compile Include="WinningStreakGame.cs" />
+    <Compile Include="StandardGameAccount.cs" />
+    <Compile Include="TrainingGame.cs" />
+    <Compile Include="WinningStreakGameAccount.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
