@@ -1,6 +1,6 @@
 ﻿namespace Лаб2
 {
-    class StandardGameAccount : GameAccount
+    public class StandardGameAccount : GameAccount
     {
         public StandardGameAccount(string userName, int initialRating) : base(userName, initialRating)
         {

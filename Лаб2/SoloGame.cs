@@ -1,6 +1,6 @@
 ﻿namespace Лаб2
 {
-    class SoloGame : Game
+    public class SoloGame : Game
     {
         private int playerRating;
 

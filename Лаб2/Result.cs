@@ -1,6 +1,6 @@
 ﻿namespace Лаб2
 {
-    class Result
+    public class Result
     {
         public string OpponentName { get; }
         public bool Victory { get; }

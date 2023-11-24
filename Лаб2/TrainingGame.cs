@@ -1,6 +1,6 @@
 ﻿namespace Лаб2
 {
-    class TrainingGame : Game
+    public class TrainingGame : Game
     {
         public override int GetGameRating()
         {

@@ -1,6 +1,6 @@
 ﻿namespace Лаб2
 {
-    class StandardGame : Game
+    public class StandardGame : Game
     {
         private int gameRating;
 

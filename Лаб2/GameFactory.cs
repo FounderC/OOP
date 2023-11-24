@@ -1,6 +1,6 @@
 ﻿namespace Лаб2
 {
-    class GameFactory
+    public class GameFactory
     {
         public GameAccount CreateStandardGameAccount(string userName, int initialRating)
         {

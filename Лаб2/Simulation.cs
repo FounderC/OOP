@@ -2,7 +2,7 @@
 
 namespace Лаб2
 {
-    class Simulation
+    public class Simulation
     {
         static void Main()
         {

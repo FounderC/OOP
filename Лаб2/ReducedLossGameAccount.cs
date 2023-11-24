@@ -1,6 +1,6 @@
 ﻿namespace Лаб2
 {
-    class ReducedLossGameAccount : GameAccount
+    public class ReducedLossGameAccount : GameAccount
     {
         public ReducedLossGameAccount(string userName, int initialRating) : base(userName, initialRating)
         {

@@ -1,6 +1,6 @@
 ﻿namespace Лаб2
 {
-    class WinningStreakGameAccount : GameAccount
+    public class WinningStreakGameAccount : GameAccount
     {
         private int consecutiveWins;
 
