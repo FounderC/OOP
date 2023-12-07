@@ -5,7 +5,12 @@ namespace Лаб4.Commands
 {
     public class CommandManager
     {
-        private List<ICommand> _commands;
+        private readonly List<ICommand> _commands;
+        
+        public CommandManager()
+        {
+            _commands = new List<ICommand>();
+        }
 
         public void AddCommand(ICommand command)
         {
@@ -14,7 +19,7 @@ namespace Лаб4.Commands
 
         public void DisplayCommands()
         {
-            for (int i = 0; i < _commands.Count; i++)
+            for (var i = 0; i < _commands.Count; i++)
             {
                 Console.WriteLine($"{i + 1}. {_commands[i].GetCommandInfo()}");
             }
@@ -31,7 +36,7 @@ namespace Лаб4.Commands
                 Console.WriteLine("Некоректний вибір команди.");
             }
         }
-        
+
         public List<ICommand> Commands
         {
             get { return _commands; }
