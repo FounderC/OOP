@@ -2,6 +2,7 @@
 using Лаб4.Entities;
 using Лаб4.Repository.Base;
 using Лаб4.Simulation;
+using Лаб4.Simulation.GameType;
 
 namespace Лаб4.Commands
 {

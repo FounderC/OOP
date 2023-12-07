@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Лаб4.Simulation.GameAccounts;
+using Лаб4.Simulation.GameType;
 
 namespace Лаб4.Simulation
 {

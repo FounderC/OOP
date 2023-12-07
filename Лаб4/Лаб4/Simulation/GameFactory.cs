@@ -1,4 +1,6 @@
-﻿namespace Лаб4.Simulation
+﻿using Лаб4.Simulation.GameAccounts;
+
+namespace Лаб4.Simulation
 {
     public class GameFactory
     {

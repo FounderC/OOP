@@ -1,8 +1,9 @@
 ﻿using System;
 using Лаб3.DbContext.Entities;
 using Лаб3.Repository.Base;
+using Лаб3.Simulation.GameType;
 
-namespace Лаб3
+namespace Лаб3.Simulation
 {
     public abstract class Simulation
     {

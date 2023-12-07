@@ -1,8 +1,8 @@
-﻿namespace Лаб3
+﻿namespace Лаб4.Simulation.GameAccounts
 {
-    public class ReducedLossGameAccount : GameAccount
+    public class StandardGameAccount : GameAccount
     {
-        public ReducedLossGameAccount(string userName, int initialRating) : base(userName, initialRating)
+        public StandardGameAccount(string userName, int initialRating) : base(userName, initialRating)
         {
         }
 
@@ -13,12 +13,12 @@
 
         protected override int CalculateRatingForLoss(int gameRating)
         {
-            return gameRating / 2;
+            return gameRating;
         }
 
         public override string GetAccountType()
         {
-            return "Зі зменшеними втратами";
+            return "Стандартний";
         }
     }
 }

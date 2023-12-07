@@ -46,26 +46,26 @@
     <Compile Include="DbContext\DbContext.cs" />
     <Compile Include="DbContext\Entities\GameEntity.cs" />
     <Compile Include="DbContext\Entities\PlayerEntity.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="GameAccount.cs" />
-    <Compile Include="GameFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReducedLossGameAccount.cs" />
     <Compile Include="Repository\Base\GameRepository.cs" />
     <Compile Include="Repository\Base\PlayerRepository.cs" />
     <Compile Include="Repository\IGameRepository.cs" />
     <Compile Include="Repository\IPlayerRepository.cs" />
-    <Compile Include="Result.cs" />
     <Compile Include="Service\Base\IGameService.cs" />
     <Compile Include="Service\Base\IPlayerService.cs" />
     <Compile Include="Service\GameService.cs" />
     <Compile Include="Service\PlayerService.cs" />
-    <Compile Include="Simulation.cs" />
-    <Compile Include="SoloGame.cs" />
-    <Compile Include="StandardGame.cs" />
-    <Compile Include="StandardGameAccount.cs" />
-    <Compile Include="TrainingGame.cs" />
-    <Compile Include="WinningStreakGameAccount.cs" />
+    <Compile Include="Simulation\Game.cs" />
+    <Compile Include="Simulation\GameAccount.cs" />
+    <Compile Include="Simulation\GameAccounts\ReducedLossGameAccount.cs" />
+    <Compile Include="Simulation\GameAccounts\StandardGameAccount.cs" />
+    <Compile Include="Simulation\GameAccounts\WinningStreakGameAccount.cs" />
+    <Compile Include="Simulation\GameFactory.cs" />
+    <Compile Include="Simulation\GameType\SoloGame.cs" />
+    <Compile Include="Simulation\GameType\StandardGame.cs" />
+    <Compile Include="Simulation\GameType\TrainingGame.cs" />
+    <Compile Include="Simulation\Result.cs" />
+    <Compile Include="Simulation\Simulation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

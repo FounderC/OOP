@@ -1,17 +1,17 @@
-﻿namespace Лаб4.Simulation
+﻿namespace Лаб3.Simulation.GameType
 {
     public class SoloGame : Game
     {
-        private int _playerRating;
+        private int playerRating;
 
         public SoloGame(int playerRating)
         {
-            this._playerRating = playerRating;
+            this.playerRating = playerRating;
         }
 
         public override int GetGameRating()
         {
-            return _playerRating;
+            return playerRating;
         }
         public override string GetGameType()
         {

@@ -1,4 +1,4 @@
-﻿namespace Лаб3
+﻿namespace Лаб3.Simulation.GameAccounts
 {
     public class WinningStreakGameAccount : GameAccount
     {

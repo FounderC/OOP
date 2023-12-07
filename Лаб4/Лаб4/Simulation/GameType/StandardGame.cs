@@ -1,4 +1,4 @@
-﻿namespace Лаб3
+﻿namespace Лаб4.Simulation.GameType
 {
     public class StandardGame : Game
     {

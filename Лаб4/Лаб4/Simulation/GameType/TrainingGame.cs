@@ -1,4 +1,4 @@
-﻿namespace Лаб4.Simulation
+﻿namespace Лаб4.Simulation.GameType
 {
     public class TrainingGame : Game
     {

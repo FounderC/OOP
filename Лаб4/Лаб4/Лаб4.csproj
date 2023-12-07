@@ -68,15 +68,15 @@
     <Compile Include="Service\PlayerService.cs" />
     <Compile Include="Simulation\Game.cs" />
     <Compile Include="Simulation\GameAccount.cs" />
+    <Compile Include="Simulation\GameAccounts\ReducedLossGameAccount.cs" />
+    <Compile Include="Simulation\GameAccounts\StandardGameAccount.cs" />
+    <Compile Include="Simulation\GameAccounts\WinningStreakGameAccount.cs" />
     <Compile Include="Simulation\GameFactory.cs" />
-    <Compile Include="Simulation\ReducedLossGameAccount.cs" />
+    <Compile Include="Simulation\GameType\SoloGame.cs" />
+    <Compile Include="Simulation\GameType\StandardGame.cs" />
+    <Compile Include="Simulation\GameType\TrainingGame.cs" />
     <Compile Include="Simulation\Result.cs" />
     <Compile Include="Simulation\Simulation.cs" />
-    <Compile Include="Simulation\SoloGame.cs" />
-    <Compile Include="Simulation\StandardGame.cs" />
-    <Compile Include="Simulation\StandardGameAccount.cs" />
-    <Compile Include="Simulation\TrainingGame.cs" />
-    <Compile Include="Simulation\WinningStreakGameAccount.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

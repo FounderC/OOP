@@ -1,4 +1,6 @@
-﻿namespace Лаб3
+﻿using Лаб3.Simulation.GameAccounts;
+
+namespace Лаб3.Simulation
 {
     public class GameFactory
     {

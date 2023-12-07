@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Лаб3
+namespace Лаб3.Simulation
 {
     public abstract class GameAccount
     {
