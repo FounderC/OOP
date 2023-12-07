@@ -2,11 +2,9 @@
 using Лаб4.Repository;
 using Лаб4.Entities;
 
-using Лаб4.Service.Base;
-
 namespace Лаб4.Service
 {
-    public class GameService : IGameService
+    public class GameService
     {
         private readonly IGameRepository _gameRepository;
 

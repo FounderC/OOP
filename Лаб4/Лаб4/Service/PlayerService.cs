@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
 using Лаб4.Repository;
 using Лаб4.Entities;
-using Лаб4.Service.Base;
 
 namespace Лаб4.Service
 {
-    public class PlayerService : IPlayerService
+    public class PlayerService
     {
         private readonly IPlayerRepository _playerRepository;
 
