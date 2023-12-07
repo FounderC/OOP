@@ -2,27 +2,27 @@
 {
     public class WinningStreakGameAccount : GameAccount
     {
-        private int consecutiveWins;
+        private int _consecutiveWins;
 
         public WinningStreakGameAccount(string userName, int initialRating) : base(userName, initialRating)
         {
-            consecutiveWins = 0;
+            _consecutiveWins = 0;
         }
 
         protected override int CalculateRatingForWin(int gameRating)
         {
-            consecutiveWins++;
+            _consecutiveWins++;
             var bonus = 0;
-            if (consecutiveWins > 1)
+            if (_consecutiveWins > 1)
             {
-                bonus = consecutiveWins * 50;
+                bonus = _consecutiveWins * 50;
             }
             return gameRating + bonus;
         }
 
         protected override int CalculateRatingForLoss(int gameRating)
         {
-            consecutiveWins = 0;
+            _consecutiveWins = 0;
             return gameRating;
         }
 

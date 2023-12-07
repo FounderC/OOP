@@ -47,7 +47,7 @@ namespace Лаб3.Simulation
                         continue;
                     
                     case 2:
-                        playerRepository.Create(playerEntity);
+                        PlayerRepository.Create(playerEntity);
                         Console.WriteLine("Ви створили гравця");
                         continue;
                     
@@ -283,11 +283,11 @@ namespace Лаб3.Simulation
             switch (accountTypeChoice)
             {
                 case 1:
-                    return factory.CreateStandardGameAccount(userName, initialRating);
+                    return GameFactory.CreateStandardGameAccount(userName, initialRating);
                 case 2:
-                    return factory.CreateReducedLossGameAccount(userName, initialRating);
+                    return GameFactory.CreateReducedLossGameAccount(userName, initialRating);
                 case 3:
-                    return factory.CreateWinningStreakGameAccount(userName, initialRating);
+                    return GameFactory.CreateWinningStreakGameAccount(userName, initialRating);
                 default:
                     throw new ArgumentException("Некоректний вибір типу аккаунта.");
             }

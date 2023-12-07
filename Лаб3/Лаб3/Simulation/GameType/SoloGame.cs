@@ -2,16 +2,16 @@
 {
     public class SoloGame : Game
     {
-        private int playerRating;
+        private int _playerRating;
 
         public SoloGame(int playerRating)
         {
-            this.playerRating = playerRating;
+            this._playerRating = playerRating;
         }
 
         public override int GetGameRating()
         {
-            return playerRating;
+            return _playerRating;
         }
         public override string GetGameType()
         {

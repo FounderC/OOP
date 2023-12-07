@@ -39,7 +39,7 @@ namespace Лаб4.Simulation
 
         public void LoseGame(GameAccount opponent, int gameRating)
         {
-            int ratingChange = CalculateRatingForLoss(gameRating);
+            var ratingChange = CalculateRatingForLoss(gameRating);
             CurrentRating -= ratingChange;
             if (CurrentRating < 1)
             {

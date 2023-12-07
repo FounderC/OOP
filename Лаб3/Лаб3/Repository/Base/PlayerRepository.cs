@@ -13,7 +13,7 @@ namespace Лаб3.Repository.Base
             _dbContext = dbContext;
         }
 
-        public void Create(PlayerEntity player)
+        public static void Create(PlayerEntity player)
         {
             player.Id = _dbContext.Players.Count + 1;
             player.UserName = "Гравець" + (_dbContext.Players.Count + 1);
