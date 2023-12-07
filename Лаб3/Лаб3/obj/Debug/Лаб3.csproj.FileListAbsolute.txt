@@ -1,0 +1,7 @@
+C:\Users\Khome\Desktop\КПІ\2 курс\1 семестр\Об'єктно-орієнтоване програмування\Лаб\Лаб1\OOP\Лаб3\Лаб3\bin\Debug\Лаб3.exe.config
+C:\Users\Khome\Desktop\КПІ\2 курс\1 семестр\Об'єктно-орієнтоване програмування\Лаб\Лаб1\OOP\Лаб3\Лаб3\bin\Debug\Лаб3.exe
+C:\Users\Khome\Desktop\КПІ\2 курс\1 семестр\Об'єктно-орієнтоване програмування\Лаб\Лаб1\OOP\Лаб3\Лаб3\bin\Debug\Лаб3.pdb
+C:\Users\Khome\Desktop\КПІ\2 курс\1 семестр\Об'єктно-орієнтоване програмування\Лаб\Лаб1\OOP\Лаб3\Лаб3\obj\Debug\Лаб3.csproj.AssemblyReference.cache
+C:\Users\Khome\Desktop\КПІ\2 курс\1 семестр\Об'єктно-орієнтоване програмування\Лаб\Лаб1\OOP\Лаб3\Лаб3\obj\Debug\Лаб3.csproj.CoreCompileInputs.cache
+C:\Users\Khome\Desktop\КПІ\2 курс\1 семестр\Об'єктно-орієнтоване програмування\Лаб\Лаб1\OOP\Лаб3\Лаб3\obj\Debug\Лаб3.exe
+C:\Users\Khome\Desktop\КПІ\2 курс\1 семестр\Об'єктно-орієнтоване програмування\Лаб\Лаб1\OOP\Лаб3\Лаб3\obj\Debug\Лаб3.pdb

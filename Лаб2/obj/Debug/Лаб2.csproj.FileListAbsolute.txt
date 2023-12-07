@@ -12,3 +12,10 @@ C:\Users\Khome\Desktop\КПІ\2 курс\1 семестр\Об'єктно-орі
 C:\Users\Khome\Desktop\КПІ\2 курс\1 семестр\Об'єктно-орієнтоване програмування\Лаб\Лаб1\OOP\Лаб2\obj\Debug\Лаб2.csproj.CoreCompileInputs.cache
 C:\Users\Khome\Desktop\КПІ\2 курс\1 семестр\Об'єктно-орієнтоване програмування\Лаб\Лаб1\OOP\Лаб2\obj\Debug\Лаб2.exe
 C:\Users\Khome\Desktop\КПІ\2 курс\1 семестр\Об'єктно-орієнтоване програмування\Лаб\Лаб1\OOP\Лаб2\obj\Debug\Лаб2.pdb
+C:\Users\Khome\Desktop\Архив\OOP\Лаб2\obj\Debug\Лаб2.csproj.AssemblyReference.cache
+C:\Users\Khome\Desktop\Архив\OOP\Лаб2\obj\Debug\Лаб2.csproj.CoreCompileInputs.cache
+C:\Users\Khome\Desktop\Архив\OOP\Лаб2\obj\Debug\Лаб2.exe
+C:\Users\Khome\Desktop\Архив\OOP\Лаб2\obj\Debug\Лаб2.pdb
+C:\Users\Khome\Desktop\Архив\OOP\Лаб2\bin\Debug\Лаб2.exe.config
+C:\Users\Khome\Desktop\Архив\OOP\Лаб2\bin\Debug\Лаб2.exe
+C:\Users\Khome\Desktop\Архив\OOP\Лаб2\bin\Debug\Лаб2.pdb
