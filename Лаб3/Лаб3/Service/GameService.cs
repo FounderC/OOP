@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Лаб3.Repository;
+using Лаб3.Repository.Base;
 using Лаб3.DbContext.Entities;
 
 using Лаб3.Service.Base;

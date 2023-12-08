@@ -2,7 +2,7 @@
 using Лаб3.DbContext.Entities;
 
 
-namespace Лаб3.Repository
+namespace Лаб3.Repository.Base
 {
     public interface IGameRepository
     {

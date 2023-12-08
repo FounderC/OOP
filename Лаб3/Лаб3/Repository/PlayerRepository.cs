@@ -2,7 +2,7 @@
 using System.Linq;
 using Лаб3.DbContext.Entities;
 
-namespace Лаб3.Repository.Base
+namespace Лаб3.Repository
 {
     public class PlayerRepository
     {

@@ -9,7 +9,26 @@
   <component name="ChangeListManager">
     <list default="true" id="04a701b4-6a1e-4678-b27c-02cfe4ee8a89" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Лаб3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Лаб3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Entities/PlayerEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Entities/PlayerEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/Repository/Base/GameRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/Repository/GameRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/Repository/Base/PlayerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/Repository/PlayerRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/Repository/IGameRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/Repository/Base/IGameRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/Repository/IPlayerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/Repository/Base/IPlayerRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/Service/GameService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/Service/GameService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/Service/PlayerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/Service/PlayerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/Simulation/Simulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/Simulation/Simulation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/bin/Debug/Лаб3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/bin/Debug/Лаб3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/bin/Debug/Лаб3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/bin/Debug/Лаб3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/obj/Debug/Лаб3.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/obj/Debug/Лаб3.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/obj/Debug/Лаб3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/obj/Debug/Лаб3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/obj/Debug/Лаб3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/obj/Debug/Лаб3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Лаб3/Лаб3.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/Лаб3.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/StartGameCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/StartGameCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Repository/PlayerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Repository/PlayerRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/bin/Debug/Лаб4.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/bin/Debug/Лаб4.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/bin/Debug/Лаб4.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/bin/Debug/Лаб4.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/obj/Debug/Лаб4.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/obj/Debug/Лаб4.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/obj/Debug/Лаб4.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/obj/Debug/Лаб4.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/obj/Debug/Лаб4.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/obj/Debug/Лаб4.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Project.Лаб3.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -83,7 +103,7 @@
       <workItem from="1701979377954" duration="2728000" />
       <workItem from="1701985278391" duration="377000" />
       <workItem from="1701990266952" duration="1591000" />
-      <workItem from="1702017361367" duration="2059000" />
+      <workItem from="1702017361367" duration="4495000" />
     </task>
     <servers />
   </component>

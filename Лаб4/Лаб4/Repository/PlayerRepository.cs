@@ -7,7 +7,7 @@ namespace Лаб4.Repository
 {
     public class PlayerRepository : IPlayerRepository
     {
-        private static DbContext.DbContext _dbContext;
+        private DbContext.DbContext _dbContext;
 
         public PlayerRepository(DbContext.DbContext dbContext)
         {

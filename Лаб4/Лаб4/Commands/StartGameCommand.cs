@@ -80,7 +80,7 @@ namespace Лаб4.Commands
             Console.WriteLine("Гра створена");
         }
 
-        private static int GetChoice(int minValue, int maxValue)
+        private int GetChoice(int minValue, int maxValue)
         {
             int choice;
             while (true)
@@ -97,7 +97,7 @@ namespace Лаб4.Commands
             return choice;
         }
 
-        public static GameAccount CreatePlayer(GameFactory factory, int accountTypeChoice, string userName,
+        public GameAccount CreatePlayer(GameFactory factory, int accountTypeChoice, string userName,
             int initialRating)
         {
             switch (accountTypeChoice)
@@ -113,7 +113,7 @@ namespace Лаб4.Commands
             }
         }
 
-        private static Game CreateGame(int gameTypeChoice, int rating)
+        private Game CreateGame(int gameTypeChoice, int rating)
         {
             switch (gameTypeChoice)
             {

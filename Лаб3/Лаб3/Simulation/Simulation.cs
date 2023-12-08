@@ -1,7 +1,9 @@
 ﻿using System;
 using Лаб3.DbContext.Entities;
-using Лаб3.Repository.Base;
+using Лаб3.Repository;
 using Лаб3.Simulation.GameType;
+using Лаб3.Service.Base;
+using Лаб3.Service;
 
 namespace Лаб3.Simulation
 {
