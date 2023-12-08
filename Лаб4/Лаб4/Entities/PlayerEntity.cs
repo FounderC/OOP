@@ -6,6 +6,5 @@
         public string UserName { get; set; }
         public int CurrentRating { get; set; }
         public int GamesCount { get; set; }
-        
     }
 }
