@@ -4,7 +4,7 @@ using Лаб4.Entities;
 
 namespace Лаб4.Repository.Base
 {
-    public class GameRepository
+    public class GameRepository : IGameRepository
     {
         private readonly DbContext.DbContext _dbContext;
 

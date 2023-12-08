@@ -1,15 +1,16 @@
 ﻿using System;
 using Лаб4.Repository.Base;
+using Лаб4.Service.Base;
 
 namespace Лаб4.Commands
 {
     public class DeletePlayerCommand : ICommand
     {
-        private PlayerRepository _playerRepository;
+        private IPlayerService _playerService;
 
-        public DeletePlayerCommand(PlayerRepository playerRepository)
+        public DeletePlayerCommand(IPlayerService playerService)
         {
-            _playerRepository = playerRepository;
+            _playerService = playerService;
         }
 
         public void Execute()
@@ -22,14 +23,14 @@ namespace Лаб4.Commands
                 Console.WriteLine("Такого гравця не існує");
             }
 
-            var getPlayer = _playerRepository.ReadById(id);
+            var getPlayer = _playerService.GetPlayerById(id);
 
             if (getPlayer == default)
             {
                 Console.WriteLine("Такого гравця не існує");
             }
 
-            PlayerRepository.Delete(id);
+            _playerService.DeletePlayer(id);
             Console.WriteLine("Ви видалили гравця");
         }
 

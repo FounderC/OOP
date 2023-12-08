@@ -5,31 +5,24 @@ namespace Лаб4.Commands
 {
     public class CommandManager
     {
-        private readonly List<ICommand> _commands;
-        
-        public CommandManager()
-        {
-            _commands = new List<ICommand>();
-        }
-
         public void AddCommand(ICommand command)
         {
-            _commands.Add(command);
+            Commands.Add(command);
         }
 
         public void DisplayCommands()
         {
-            for (var i = 0; i < _commands.Count; i++)
+            for (var i = 0; i < Commands.Count; i++)
             {
-                Console.WriteLine($"{i + 1}. {_commands[i].GetCommandInfo()}");
+                Console.WriteLine($"{i + 1}. {Commands[i].GetCommandInfo()}");
             }
         }
 
         public void ExecuteCommand(int index)
         {
-            if (index >= 0 && index < _commands.Count)
+            if (index >= 0 && index < Commands.Count)
             {
-                _commands[index].Execute();
+                Commands[index].Execute();
             }
             else
             {
@@ -37,9 +30,6 @@ namespace Лаб4.Commands
             }
         }
 
-        public List<ICommand> Commands
-        {
-            get { return _commands; }
-        }
+        public List<ICommand> Commands { get; } = new List<ICommand>();
     }
 }

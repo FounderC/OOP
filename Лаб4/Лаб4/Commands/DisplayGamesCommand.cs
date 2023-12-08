@@ -1,22 +1,23 @@
 ﻿using System;
 using Лаб4.Repository.Base;
+using Лаб4.Service.Base;
 
 namespace Лаб4.Commands
 {
     public class DisplayGamesCommand : ICommand
     {
-        private GameRepository _gameRepository;
+        private IGameService _gameService;
 
-        public DisplayGamesCommand(GameRepository gameRepository)
+        public DisplayGamesCommand(IGameService gameService)
         {
-            _gameRepository = gameRepository;
+            _gameService = gameService;
         }
 
         public void Execute()
         {
             Console.WriteLine("Список усіх ігор:");
-            
-            foreach (var gameEntity in _gameRepository.ReadAll())
+
+            foreach (var gameEntity in _gameService.GetAllGames())
             {
                 Console.WriteLine(
                     $"ID гри {gameEntity.Id}, Рейтинг гри {gameEntity.GameRating}, Тип гри {gameEntity.GameType}, Тип аккаунта {gameEntity.AccountType}, Перемога: {gameEntity.IsWin}");

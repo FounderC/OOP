@@ -4,7 +4,7 @@ using Лаб4.Entities;
 
 namespace Лаб4.Repository.Base
 {
-    public class PlayerRepository
+    public class PlayerRepository : IPlayerRepository
     {
         private static DbContext.DbContext _dbContext;
 
@@ -41,7 +41,7 @@ namespace Лаб4.Repository.Base
             }
         }
 
-        public static void Delete(int playerId)
+        public void Delete(int playerId)
         {
             var playerToDelete = _dbContext.Players.FirstOrDefault(p => p.Id == playerId);
             if (playerToDelete != null)

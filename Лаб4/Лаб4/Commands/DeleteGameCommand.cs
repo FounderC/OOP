@@ -1,22 +1,23 @@
 ﻿using System;
 using Лаб4.Repository.Base;
+using Лаб4.Service.Base;
 
 namespace Лаб4.Commands
 {
     public class DeleteGameCommand : ICommand
     {
-        private GameRepository _gameRepository;
+        private IGameService _gameService;
 
-        public DeleteGameCommand(GameRepository gameRepository)
+        public DeleteGameCommand(IGameService gameService)
         {
-            _gameRepository = gameRepository;
+            _gameService = gameService;
         }
 
         public void Execute()
         {
             Console.WriteLine("Введіть ID гри");
             var gameId = int.Parse(Console.ReadLine());
-            _gameRepository.Delete(gameId);
+            _gameService.DeleteGame(gameId);
             Console.WriteLine("Гру було успішно видалено");
         }
 

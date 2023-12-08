@@ -1,22 +1,21 @@
 ﻿using System;
 using Лаб4.Entities;
-using Лаб4.Repository.Base;
 using Лаб4.Simulation;
 using Лаб4.Simulation.GameType;
+using Лаб4.Service.Base;
 
 namespace Лаб4.Commands
 {
     public class StartGameCommand : ICommand
     {
-        private PlayerRepository _playerRepository;
-        private GameRepository _gameRepository;
+        private IPlayerService _playerService;
+        private IGameService _gameService;
         private GameFactory _gameFactory;
 
-        public StartGameCommand(PlayerRepository playerRepository, GameRepository gameRepository,
-            GameFactory gameFactory)
+        public StartGameCommand(IPlayerService playerService, IGameService gameService, GameFactory gameFactory)
         {
-            _playerRepository = playerRepository;
-            _gameRepository = gameRepository;
+            _playerService = playerService;
+            _gameService = gameService;
             _gameFactory = gameFactory;
         }
 
@@ -24,11 +23,11 @@ namespace Лаб4.Commands
         {
             Console.WriteLine("Введіть ID першого гравця");
             var player1Id = int.Parse(Console.ReadLine() ?? string.Empty);
-            var player1 = _playerRepository.ReadById(player1Id);
+            var player1 = _playerService.GetPlayerById(player1Id);
 
             Console.WriteLine("Введіть ID другого гравця");
             var player2Id = int.Parse(Console.ReadLine() ?? string.Empty);
-            var player2 = _playerRepository.ReadById(player2Id);
+            var player2 = _playerService.GetPlayerById(player2Id);
 
             Console.WriteLine("Виберіть тип аккаунта:");
             Console.WriteLine("1. Стандартний аккаунт");
@@ -57,18 +56,18 @@ namespace Лаб4.Commands
 
                 player1.CurrentRating = player1Account.CurrentRating;
                 player1.GamesCount = player1Account.GamesCount;
-                _playerRepository.Update(player1);
+                _playerService.UpdatePlayer(player1);
 
                 player2.CurrentRating = player2Account.CurrentRating;
                 player2.GamesCount = player2Account.GamesCount;
-                _playerRepository.Update(player2);
+                _playerService.UpdatePlayer(player2);
 
                 var gameEntity = new GameEntity
                 {
                     GameRating = gameRating, PlayerId = player1Id, GameType = game.GetGameType(),
                     AccountType = player1Account.GetAccountType()
                 };
-                _gameRepository.Create(gameEntity);
+                _gameService.CreateGame(gameEntity.GameRating);
             }
 
             Console.WriteLine("\nСтатистика гравців після симуляції:");
@@ -78,11 +77,6 @@ namespace Лаб4.Commands
             player2Account.GetStats();
 
             Console.WriteLine("Гра створена");
-        }
-
-        public string GetCommandInfo()
-        {
-            return "Почати гру";
         }
 
         private static int GetChoice(int minValue, int maxValue)
@@ -102,7 +96,7 @@ namespace Лаб4.Commands
             return choice;
         }
 
-        private static GameAccount CreatePlayer(GameFactory factory, int accountTypeChoice, string userName,
+        public static GameAccount CreatePlayer(GameFactory factory, int accountTypeChoice, string userName,
             int initialRating)
         {
             switch (accountTypeChoice)
@@ -131,6 +125,11 @@ namespace Лаб4.Commands
                 default:
                     throw new ArgumentException("Некоректний вибір типу гри.");
             }
+        }
+
+        public string GetCommandInfo()
+        {
+            return "Почати гру";
         }
     }
 }

@@ -1,22 +1,22 @@
 ﻿using System;
-using Лаб4.Repository.Base;
+using Лаб4.Service.Base;
 
 namespace Лаб4.Commands
 {
     public class EditPlayerCommand : ICommand
     {
-        private PlayerRepository _playerRepository;
+        private IPlayerService _playerService;
 
-        public EditPlayerCommand(PlayerRepository playerRepository)
+        public EditPlayerCommand(IPlayerService playerService)
         {
-            _playerRepository = playerRepository;
+            _playerService = playerService;
         }
 
         public void Execute()
         {
             Console.WriteLine("Введіть ID гравця");
             var playerId = int.Parse(Console.ReadLine() ?? string.Empty);
-            var player = _playerRepository.ReadById(playerId);
+            var player = _playerService.GetPlayerById(playerId);
 
             if (player == null)
             {
@@ -49,7 +49,7 @@ namespace Лаб4.Commands
                     break;
             }
 
-            _playerRepository.Update(player);
+            _playerService.UpdatePlayer(player);
             Console.WriteLine("Гравець був успішно оновлений");
         }
 

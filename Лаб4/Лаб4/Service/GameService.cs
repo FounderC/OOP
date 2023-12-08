@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using Лаб4.Repository;
 using Лаб4.Entities;
+using Лаб4.Service.Base;
 
 namespace Лаб4.Service
 {
-    public class GameService
+    public class GameService : IGameService
     {
         private readonly IGameRepository _gameRepository;
 

@@ -1,35 +1,35 @@
 ﻿using System;
-using Лаб4.Repository.Base;
 using System.Linq;
+using Лаб4.Service.Base;
 
 namespace Лаб4.Commands
 {
     public class DisplayPlayerGamesCommand : ICommand
     {
-        private PlayerRepository _playerRepository;
-        private GameRepository _gameRepository;
+        private IPlayerService _playerService;
+        private IGameService _gameService;
 
-        public DisplayPlayerGamesCommand(PlayerRepository playerRepository, GameRepository gameRepository)
+        public DisplayPlayerGamesCommand(IPlayerService playerService, IGameService gameService)
         {
-            _playerRepository = playerRepository;
-            _gameRepository = gameRepository;
+            _playerService = playerService;
+            _gameService = gameService;
         }
 
         public void Execute()
         {
             Console.WriteLine("Введіть ID гравця");
             var playerId = int.Parse(Console.ReadLine() ?? string.Empty);
-            var selectedPlayer = _playerRepository.ReadById(playerId);
-            
+            var selectedPlayer = _playerService.GetPlayerById(playerId);
+
             if (selectedPlayer == null)
             {
                 Console.WriteLine("Такого гравця не існує");
                 return;
             }
-            
+
             Console.WriteLine($"Список ігор гравця {selectedPlayer.UserName}:");
-            
-            var games = _gameRepository.ReadAll().Where(game => game.PlayerId == playerId);
+
+            var games = _gameService.GetAllGames().Where(game => game.PlayerId == playerId);
             foreach (var game in games)
             {
                 Console.WriteLine(

@@ -1,22 +1,23 @@
 ﻿using System;
 using Лаб4.Entities;
 using Лаб4.Repository.Base;
+using Лаб4.Service.Base;
 
 namespace Лаб4.Commands
 {
     public class CreatePlayerCommand : ICommand
     {
-        private PlayerRepository _playerRepository;
+        private IPlayerService _playerService;
 
-        public CreatePlayerCommand(PlayerRepository playerRepository)
+        public CreatePlayerCommand(IPlayerService playerService)
         {
-            _playerRepository = playerRepository;
+            _playerService = playerService;
         }
 
         public void Execute()
         {
             var newPlayer = new PlayerEntity();
-            _playerRepository.Create(newPlayer);
+            _playerService.CreatePlayer(newPlayer.UserName, newPlayer.CurrentRating);
 
             Console.WriteLine($"Гравець був успішно створений");
         }

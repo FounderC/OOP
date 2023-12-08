@@ -8,7 +8,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04a701b4-6a1e-4678-b27c-02cfe4ee8a89" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Лаб3/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Лаб3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Лаб3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/CommandManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/CommandManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/CreatePlayerCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/CreatePlayerCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/DeleteGameCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/DeleteGameCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/DeletePlayerCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/DeletePlayerCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/DisplayGamesCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/DisplayGamesCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/DisplayPlayerGamesCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/DisplayPlayerGamesCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/DisplayPlayersCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/DisplayPlayersCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/EditGameCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/EditGameCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/EditPlayerCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/EditPlayerCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/StartGameCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Commands/StartGameCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Repository/Base/GameRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Repository/Base/GameRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Repository/Base/PlayerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Repository/Base/PlayerRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Service/GameService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Service/GameService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Service/PlayerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Service/PlayerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/Simulation/Simulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/Simulation/Simulation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/bin/Debug/Лаб4.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/bin/Debug/Лаб4.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/bin/Debug/Лаб4.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/bin/Debug/Лаб4.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/obj/Debug/Лаб4.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/obj/Debug/Лаб4.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/obj/Debug/Лаб4.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/obj/Debug/Лаб4.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб4/Лаб4/obj/Debug/Лаб4.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб4/Лаб4/obj/Debug/Лаб4.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,25 +47,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Khome\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Khome\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Khome\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Khome\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Khome\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Khome\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Лаб3" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Лаб3/bin/Debug/Лаб3.exe" />
@@ -80,6 +102,8 @@
       <updated>1701979376522</updated>
       <workItem from="1701979377954" duration="2728000" />
       <workItem from="1701985278391" duration="377000" />
+      <workItem from="1701990266952" duration="1591000" />
+      <workItem from="1702017361367" duration="1283000" />
     </task>
     <servers />
   </component>

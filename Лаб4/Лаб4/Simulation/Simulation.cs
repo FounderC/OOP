@@ -1,6 +1,8 @@
 ﻿using System;
 using Лаб4.Repository.Base;
 using Лаб4.Commands;
+using Лаб4.Service.Base;
+using Лаб4.Service;
 
 namespace Лаб4.Simulation
 {
@@ -15,16 +17,20 @@ namespace Лаб4.Simulation
         private static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            
-            _commandManager.AddCommand(new CreatePlayerCommand(_playerRepository));
-            _commandManager.AddCommand(new DisplayPlayersCommand(_playerRepository));
-            _commandManager.AddCommand(new DeletePlayerCommand(_playerRepository));
-            _commandManager.AddCommand(new EditPlayerCommand(_playerRepository));
-            _commandManager.AddCommand(new DisplayPlayerGamesCommand(_playerRepository, _gameRepository));
-            _commandManager.AddCommand(new DisplayGamesCommand(_gameRepository));
-            _commandManager.AddCommand(new EditGameCommand(_gameRepository));
-            _commandManager.AddCommand(new DeleteGameCommand(_gameRepository));
-            _commandManager.AddCommand(new StartGameCommand(_playerRepository, _gameRepository, _gameFactory));
+
+            IPlayerService playerService = new PlayerService(_playerRepository);
+            IGameService gameService = new GameService(_gameRepository);
+
+            // Передайте екземпляри сервісів як параметри при створенні команд
+            _commandManager.AddCommand(new CreatePlayerCommand(playerService));
+            _commandManager.AddCommand(new DisplayPlayersCommand(playerService));
+            _commandManager.AddCommand(new DeletePlayerCommand(playerService));
+            _commandManager.AddCommand(new EditPlayerCommand(playerService));
+            _commandManager.AddCommand(new DisplayPlayerGamesCommand(playerService, gameService));
+            _commandManager.AddCommand(new DisplayGamesCommand(gameService));
+            _commandManager.AddCommand(new EditGameCommand(gameService));
+            _commandManager.AddCommand(new DeleteGameCommand(gameService));
+            _commandManager.AddCommand(new StartGameCommand(playerService, gameService, _gameFactory));
 
             Start();
         }
@@ -40,7 +46,7 @@ namespace Лаб4.Simulation
                 _commandManager.ExecuteCommand(startChoice - 1);
             }
         }
-        
+
         private static int GetChoice(int minValue, int maxValue)
         {
             int choice;

@@ -1,24 +1,22 @@
 ﻿using System;
-using Лаб4.Entities;
-using Лаб4.Repository.Base;
-
+using Лаб4.Service.Base;
 
 namespace Лаб4.Commands
 {
     public class EditGameCommand : ICommand
     {
-        private GameRepository _gameRepository;
+        private IGameService _gameService;
 
-        public EditGameCommand(GameRepository gameRepository)
+        public EditGameCommand(IGameService gameService)
         {
-            _gameRepository = gameRepository;
+            _gameService = gameService;
         }
 
         public void Execute()
         {
             Console.WriteLine("Введіть ID гри");
             var gameId = int.Parse(Console.ReadLine());
-            var selectedGame = _gameRepository.ReadById(gameId);
+            var selectedGame = _gameService.GetGameById(gameId);
 
             if (selectedGame == null)
             {
@@ -46,11 +44,11 @@ namespace Лаб4.Commands
                     break;
             }
 
-            _gameRepository.Update(selectedGame);
+            _gameService.UpdateGame(selectedGame);
             Console.WriteLine("Ви оновили гру");
             return;
         }
-        
+
         private static int GetChoice(int minValue, int maxValue)
         {
             int choice;
