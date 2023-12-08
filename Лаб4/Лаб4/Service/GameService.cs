@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Лаб4.Repository;
+using Лаб4.Repository.Base;
 using Лаб4.Entities;
 using Лаб4.Service.Base;
 

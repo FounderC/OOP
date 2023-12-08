@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Лаб4.Entities;
+using Лаб4.Repository.Base;
 
-namespace Лаб4.Repository.Base
+namespace Лаб4.Repository
 {
     public class PlayerRepository : IPlayerRepository
     {

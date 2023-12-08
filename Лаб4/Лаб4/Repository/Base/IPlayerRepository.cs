@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Лаб4.Entities;
 
-namespace Лаб4.Repository
+namespace Лаб4.Repository.Base
 {
     public interface IPlayerRepository
     {

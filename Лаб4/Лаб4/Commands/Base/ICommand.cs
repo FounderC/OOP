@@ -1,4 +1,4 @@
-﻿namespace Лаб4.Commands
+﻿namespace Лаб4.Commands.Base
 {
     public interface ICommand
     {

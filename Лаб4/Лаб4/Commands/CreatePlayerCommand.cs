@@ -1,7 +1,7 @@
 ﻿using System;
 using Лаб4.Entities;
-using Лаб4.Repository.Base;
 using Лаб4.Service.Base;
+using Лаб4.Commands.Base;
 
 namespace Лаб4.Commands
 {

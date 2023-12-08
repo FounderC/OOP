@@ -1,5 +1,5 @@
 ﻿using System;
-using Лаб4.Repository.Base;
+using Лаб4.Commands.Base;
 using Лаб4.Service.Base;
 
 namespace Лаб4.Commands
