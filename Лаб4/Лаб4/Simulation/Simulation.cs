@@ -21,7 +21,6 @@ namespace Лаб4.Simulation
             IPlayerService playerService = new PlayerService(_playerRepository);
             IGameService gameService = new GameService(_gameRepository);
 
-            // Передайте екземпляри сервісів як параметри при створенні команд
             _commandManager.AddCommand(new CreatePlayerCommand(playerService));
             _commandManager.AddCommand(new DisplayPlayersCommand(playerService));
             _commandManager.AddCommand(new DeletePlayerCommand(playerService));
