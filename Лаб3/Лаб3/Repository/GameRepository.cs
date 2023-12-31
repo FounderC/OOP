@@ -5,7 +5,7 @@ using Лаб3.DbContext.Entities;
 
 namespace Лаб3.Repository
 {
-    public class GameRepository
+    public class GameRepository 
     {
         private readonly DbContext.DbContext _dbContext;
 

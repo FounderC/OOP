@@ -4,7 +4,7 @@ using Лаб3.DbContext.Entities;
 
 namespace Лаб3.Repository
 {
-    public class PlayerRepository
+    public class PlayerRepository 
     {
         private static DbContext.DbContext _dbContext;
 
