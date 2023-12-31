@@ -8,30 +8,36 @@ namespace КР.Interaction
 {
     public class UserInteraction
     {
-        private static CommandManager _commandManager = new CommandManager();
+        private CommandManager _commandManager;
+        private ServicesInitializer _servicesInitializer;
+        private ProductInitializer _productInitializer;
 
-        private static ProductInitializer _productInitializer =
-            new ProductInitializer(ServicesInitializer.ProductService);
+        public UserInteraction()
+        {
+            _servicesInitializer = new ServicesInitializer();
+            _commandManager = new CommandManager();
+            _productInitializer = new ProductInitializer(_servicesInitializer.ProductService);
+        }
 
-        public static void Main()
+        public void Run()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             _productInitializer.InitializeProducts();
 
-            _commandManager.AddCommand(new RegisterUserCommand(ServicesInitializer.UserService));
-            _commandManager.AddCommand(new LoginCommand(ServicesInitializer.UserService));
+            _commandManager.AddCommand(new RegisterUserCommand(_servicesInitializer.UserService));
+            _commandManager.AddCommand(new LoginCommand(_servicesInitializer.UserService));
             _commandManager.AddCommand(new LogoutCommand());
-            _commandManager.AddCommand(new TopUpBalanceCommand(ServicesInitializer.UserService));
+            _commandManager.AddCommand(new TopUpBalanceCommand(_servicesInitializer.UserService));
             _commandManager.AddCommand(new CheckBalanceCommand());
-            _commandManager.AddCommand(new DisplayProductsCommand(ServicesInitializer.ProductService));
-            _commandManager.AddCommand(new BuyProductCommand(ServicesInitializer.OrderService,
-                ServicesInitializer.ProductService));
-            _commandManager.AddCommand(new DisplayOrderHistoryCommand(ServicesInitializer.OrderService));
+            _commandManager.AddCommand(new DisplayProductsCommand(_servicesInitializer.ProductService));
+            _commandManager.AddCommand(new BuyProductCommand(_servicesInitializer.OrderService,
+                _servicesInitializer.ProductService));
+            _commandManager.AddCommand(new DisplayOrderHistoryCommand(_servicesInitializer.OrderService));
             Start();
         }
 
-        private static void Start()
+        private void Start()
         {
             User currentUser = null;
 
@@ -59,7 +65,7 @@ namespace КР.Interaction
             }
         }
 
-        private static int GetChoice(int minValue, int maxValue)
+        private int GetChoice(int minValue, int maxValue)
         {
             int choice;
             while (true)

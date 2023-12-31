@@ -6,14 +6,19 @@ namespace КР.Initializers
 {
     public class ServicesInitializer
     {
-        public static IOrderRepository OrderRepository { get; } = new OrderRepository();
-        public static IProductRepository ProductRepository { get; } = new ProductRepository();
-        public static IUserRepository UserRepository { get; } = new UserRepository();
+        public IOrderRepository OrderRepository { get; } = new OrderRepository();
+        public IProductRepository ProductRepository { get; } = new ProductRepository();
+        public IUserRepository UserRepository { get; } = new UserRepository();
 
-        public static ProductService ProductService { get; } = new ProductService(ProductRepository);
-        public static UserService UserService { get; } = new UserService(UserRepository);
+        public ProductService ProductService { get; }
+        public UserService UserService { get; }
+        public OrderService OrderService { get; }
 
-        public static OrderService OrderService { get; } =
-            new OrderService(OrderRepository, UserService, ProductService);
+        public ServicesInitializer()
+        {
+            ProductService = new ProductService(ProductRepository);
+            UserService = new UserService(UserRepository);
+            OrderService = new OrderService(OrderRepository, UserService, ProductService);
+        }
     }
 }
