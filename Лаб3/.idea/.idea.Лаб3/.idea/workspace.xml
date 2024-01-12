@@ -8,9 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04a701b4-6a1e-4678-b27c-02cfe4ee8a89" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Лаб1/Simulation/GameAccount.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Лаб1/Simulation/Result.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб1/Simulation/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лаб1/Лаб1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Лаб1/Лаб1.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Лаб3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Лаб3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Лаб3/Repository/GameRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/Repository/GameRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Лаб3/Repository/PlayerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Лаб3/Repository/PlayerRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -86,6 +89,7 @@
       <workItem from="1701985278391" duration="377000" />
       <workItem from="1701990266952" duration="1591000" />
       <workItem from="1702017361367" duration="4976000" />
+      <workItem from="1705055746485" duration="316000" />
     </task>
     <servers />
   </component>

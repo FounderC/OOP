@@ -1,0 +1,7 @@
+E:\GitHub\OOP\Лаб1\bin\Debug\Лаб1.exe.config
+E:\GitHub\OOP\Лаб1\bin\Debug\Лаб1.exe
+E:\GitHub\OOP\Лаб1\bin\Debug\Лаб1.pdb
+E:\GitHub\OOP\Лаб1\obj\Debug\Лаб1.csproj.AssemblyReference.cache
+E:\GitHub\OOP\Лаб1\obj\Debug\Лаб1.csproj.CoreCompileInputs.cache
+E:\GitHub\OOP\Лаб1\obj\Debug\Лаб1.exe
+E:\GitHub\OOP\Лаб1\obj\Debug\Лаб1.pdb
